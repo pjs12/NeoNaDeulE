@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+	{% block content %}
+	<body style='background-image: url("../static/img/hero.jpg"); background-attachment: fixed;background-size: 100% 100%;'>
+		<div class="container" >
+			<div class="row" style="margin-top: 10em;">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h1 class="animated bounceInDown"><strong style="font-size: 4em; line-height: 1.25em;font-style: italic;color:white;font-weight:bold">너나들이</strong></h1>
+					{% comment %} <h1 class="animated bounceInDown">너나들이</h1> {% endcomment %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-md-offset-5 text-center">
+					<a href="{% url 'Translation:index' %}" class="hero-play-btn"  style="margin-top:30px;margin-bottom:20px;">Play Button</a>
+					<p style="font-style: italic;color:rgb(255, 255, 255);">번역페이지로 이동</p>
+				</div>
+			</div>
+		</div>
+	</body> 
+	{% endblock %}
